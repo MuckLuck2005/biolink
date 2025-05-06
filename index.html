@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Biolink</title>
+  <title>DV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="avatar.png">
   <style>
     body {
       min-height: 100vh;
@@ -29,66 +30,49 @@
     .container {
       /* margin-top: 48px; */
       background: #fff;
-      padding: 32px 24px;
-      border-radius: 16px;
+      padding: 48px 32px;
+      border-radius: 32px;
       box-shadow: 0 2px 16px #0001;
-      max-width: 350px;
+      max-width: 400px;
       width: 100%;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 24px; display: block; }
-    h1 { text-align: center; margin-bottom: 8px; color: #111; }
-    .links a { display: flex; align-items: center; gap: 12px; background: #fff; color: #111; border: 2px solid #111; text-decoration: none; padding: 14px; border-radius: 8px; margin: 12px 0; text-align: center; font-size: 18px; transition: background 0.2s, color 0.2s; font-weight: 500; }
+    .avatar { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 32px; display: block; }
+    h1 { text-align: center; margin-bottom: 24px; color: #111; font-size: 2em; }
+    .links a { display: flex; align-items: center; gap: 16px; background: #fff; color: #111; border: 2px solid #111; text-decoration: none; padding: 20px; border-radius: 16px; margin: 18px 0; text-align: center; font-size: 22px; transition: background 0.2s, color 0.2s; font-weight: 600; }
     .links a:hover { background: #111; color: #fff; }
-    .links svg { width: 24px; height: 24px; flex-shrink: 0; }
-    @media (max-width: 500px) {
+    .links svg { width: 28px; height: 28px; flex-shrink: 0; }
+    @media (max-width: 600px) {
       .container {
-        margin-top: 24px;
-        padding: 16px 4px;
         max-width: 98vw;
+        width: 98vw;
+        padding: 8vw 2vw 8vw 2vw;
+        border-radius: 24px;
+        margin: 8px auto;
+        min-height: 0;
       }
       .avatar {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         margin-bottom: 16px;
       }
       h1 {
         font-size: 1.3em;
-      }
-      .links a {
-        font-size: 1em;
-        padding: 12px;
-        gap: 8px;
-      }
-      .links svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
-    @media (max-width: 600px) {
-      .container {
-        max-width: 350px;
-        width: 94vw;
-        padding: 24px 8px;
-        border-radius: 28px;
-        margin: 16px auto;
-      }
-      .avatar {
-        width: 72px;
-        height: 72px;
         margin-bottom: 12px;
       }
-      h1 {
-        font-size: 1.1em;
-      }
       .links a {
-        font-size: 1em;
-        padding: 10px;
-        gap: 8px;
-        border-radius: 14px;
+        font-size: 1.1em;
+        padding: 14px;
+        gap: 10px;
+        border-radius: 12px;
+        margin: 10px 0;
       }
       .links svg {
-        width: 18px;
-        height: 18px;
+        width: 22px;
+        height: 22px;
       }
     }
   </style>
