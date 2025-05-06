@@ -6,22 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
+      min-height: 100vh;
+      height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background: linear-gradient(270deg, #7f5fff, #3c8ce7, #6a82fb, #fc5c7d, #7f5fff);
       background-size: 400% 400%;
       animation: gradientBG 12s ease infinite;
       color: #111;
       font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin: 0;
+      overflow: hidden;
     }
     @keyframes gradientBG {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
-    .container { margin-top: 60px; background: #fff; padding: 32px 24px; border-radius: 16px; box-shadow: 0 2px 16px #0001; max-width: 350px; width: 100%; }
+    .container {
+      /* margin-top: 48px; */
+      background: #fff;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px #0001;
+      max-width: 350px;
+      width: 100%;
+    }
     .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 24px; display: block; }
     h1 { text-align: center; margin-bottom: 8px; color: #111; }
     .links a { display: flex; align-items: center; gap: 12px; background: #fff; color: #111; border: 2px solid #111; text-decoration: none; padding: 14px; border-radius: 8px; margin: 12px 0; text-align: center; font-size: 18px; transition: background 0.2s, color 0.2s; font-weight: 500; }
